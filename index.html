@@ -3,68 +3,83 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nexa Demo Studio</title>
-  <meta name="description" content="Modern AI automation demo website" />
+  <title>AetherOps Studio — AI Workflow Systems</title>
+  <meta name="description" content="AetherOps Studio builds modern AI workflow systems, multi-agent automations, and decision dashboards." />
+  <meta name="theme-color" content="#06b6d4" />
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-slate-950 text-slate-100">
-  <header class="border-b border-slate-800 sticky top-0 bg-slate-950/90 backdrop-blur z-10">
+<body class="bg-slate-950 text-slate-100 selection:bg-cyan-300 selection:text-slate-900">
+  <header class="border-b border-slate-800 sticky top-0 bg-slate-950/90 backdrop-blur z-20">
     <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-      <h1 class="text-lg font-semibold">⚡ Nexa Demo Studio</h1>
-      <a href="#contact" class="text-sm bg-cyan-500 hover:bg-cyan-400 text-slate-950 px-4 py-2 rounded-lg font-semibold">Start Demo</a>
+      <h1 class="text-lg font-semibold tracking-wide">🦞 AetherOps Studio</h1>
+      <nav class="hidden md:flex gap-6 text-sm text-slate-300">
+        <a href="#services" class="hover:text-cyan-300">Services</a>
+        <a href="#workflow" class="hover:text-cyan-300">Workflow</a>
+        <a href="#contact" class="hover:text-cyan-300">Contact</a>
+      </nav>
+      <a href="#contact" class="text-sm bg-cyan-500 hover:bg-cyan-400 text-slate-950 px-4 py-2 rounded-lg font-semibold">Book Demo</a>
     </div>
   </header>
 
   <section class="max-w-6xl mx-auto px-6 py-20">
-    <p class="text-cyan-400 font-medium mb-3">AI + Automation Agency Demo</p>
-    <h2 class="text-4xl md:text-6xl font-bold leading-tight">We Build Smart Systems That Work 24/7</h2>
-    <p class="mt-6 text-slate-300 max-w-2xl">From multi-agent workflows to automated reporting, we help teams reduce manual work and move faster with confidence.</p>
-    <div class="mt-8 flex gap-3">
+    <p class="text-cyan-400 font-medium mb-3">Automation • Intelligence • Execution</p>
+    <h2 class="text-4xl md:text-6xl font-bold leading-tight">Build Once. Run 24/7. Improve Every Week.</h2>
+    <p class="mt-6 text-slate-300 max-w-2xl">We design production-ready AI workflows: multi-agent operations, automated reporting, and secure monitoring systems for high-speed teams.</p>
+    <div class="mt-8 flex gap-3 flex-wrap">
       <a href="#services" class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 px-5 py-3 rounded-lg font-semibold">Explore Services</a>
-      <a href="#demo" class="border border-slate-700 px-5 py-3 rounded-lg hover:bg-slate-900">See Demo Flow</a>
+      <a href="#workflow" class="border border-slate-700 px-5 py-3 rounded-lg hover:bg-slate-900">See Workflow</a>
     </div>
   </section>
 
-  <section id="services" class="max-w-6xl mx-auto px-6 py-10">
-    <h3 class="text-2xl font-bold mb-6">Services</h3>
+  <section id="services" class="max-w-6xl mx-auto px-6 py-8">
+    <h3 class="text-2xl font-bold mb-6">Core Services</h3>
     <div class="grid md:grid-cols-3 gap-4">
-      <div class="bg-slate-900 border border-slate-800 rounded-xl p-5"><h4 class="font-semibold">Multi-Agent Ops</h4><p class="text-slate-400 mt-2 text-sm">Design role-based agent teams with monitoring and escalation.</p></div>
-      <div class="bg-slate-900 border border-slate-800 rounded-xl p-5"><h4 class="font-semibold">Workflow Automation</h4><p class="text-slate-400 mt-2 text-sm">Turn repetitive tasks into scheduled, reliable automations.</p></div>
-      <div class="bg-slate-900 border border-slate-800 rounded-xl p-5"><h4 class="font-semibold">Reporting & Insights</h4><p class="text-slate-400 mt-2 text-sm">Get concise decision-ready dashboards and daily digests.</p></div>
+      <article class="bg-slate-900 border border-slate-800 rounded-xl p-5">
+        <h4 class="font-semibold">Multi-Agent Operations</h4>
+        <p class="text-slate-400 mt-2 text-sm">Role-based agent systems with clear ownership, escalation, and low-noise execution.</p>
+      </article>
+      <article class="bg-slate-900 border border-slate-800 rounded-xl p-5">
+        <h4 class="font-semibold">Workflow Automation</h4>
+        <p class="text-slate-400 mt-2 text-sm">Convert repetitive tasks into reliable automations using cron + event-driven triggers.</p>
+      </article>
+      <article class="bg-slate-900 border border-slate-800 rounded-xl p-5">
+        <h4 class="font-semibold">Decision Dashboards</h4>
+        <p class="text-slate-400 mt-2 text-sm">Compact executive reporting with risks, KPIs, and next actions—ready to act on.</p>
+      </article>
     </div>
   </section>
 
-  <section id="demo" class="max-w-6xl mx-auto px-6 py-14">
-    <h3 class="text-2xl font-bold mb-6">Demo Workflow</h3>
+  <section id="workflow" class="max-w-6xl mx-auto px-6 py-14">
+    <h3 class="text-2xl font-bold mb-6">How We Work</h3>
     <div class="grid md:grid-cols-4 gap-4 text-sm">
-      <div class="bg-slate-900 border border-slate-800 rounded-xl p-4"><p class="text-cyan-400 font-semibold">Step 1</p><p class="mt-2">Collect requirements</p></div>
-      <div class="bg-slate-900 border border-slate-800 rounded-xl p-4"><p class="text-cyan-400 font-semibold">Step 2</p><p class="mt-2">Build agents & automations</p></div>
-      <div class="bg-slate-900 border border-slate-800 rounded-xl p-4"><p class="text-cyan-400 font-semibold">Step 3</p><p class="mt-2">Run monitoring + alerts</p></div>
-      <div class="bg-slate-900 border border-slate-800 rounded-xl p-4"><p class="text-cyan-400 font-semibold">Step 4</p><p class="mt-2">Optimize with weekly reports</p></div>
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-4"><p class="text-cyan-400 font-semibold">01 Discover</p><p class="mt-2">Map goals, risks, and current process gaps.</p></div>
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-4"><p class="text-cyan-400 font-semibold">02 Design</p><p class="mt-2">Define agent roles, rules, and reporting standards.</p></div>
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-4"><p class="text-cyan-400 font-semibold">03 Deploy</p><p class="mt-2">Launch automations with guarded, secure defaults.</p></div>
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-4"><p class="text-cyan-400 font-semibold">04 Optimize</p><p class="mt-2">Improve weekly with KPI-driven iteration loops.</p></div>
     </div>
   </section>
 
-  <section class="max-w-6xl mx-auto px-6 py-6">
+  <section class="max-w-6xl mx-auto px-6 py-4">
     <div class="grid md:grid-cols-3 gap-4">
-      <div class="bg-slate-900 rounded-xl p-5 border border-slate-800"><p class="text-3xl font-bold">40%</p><p class="text-slate-400 text-sm">Less repetitive manual work</p></div>
-      <div class="bg-slate-900 rounded-xl p-5 border border-slate-800"><p class="text-3xl font-bold">24/7</p><p class="text-slate-400 text-sm">Automation monitoring uptime</p></div>
-      <div class="bg-slate-900 rounded-xl p-5 border border-slate-800"><p class="text-3xl font-bold">3x</p><p class="text-slate-400 text-sm">Faster operational decisions</p></div>
+      <div class="bg-slate-900 rounded-xl p-5 border border-slate-800"><p class="text-3xl font-bold text-cyan-300">40%+</p><p class="text-slate-400 text-sm">Less repetitive manual ops</p></div>
+      <div class="bg-slate-900 rounded-xl p-5 border border-slate-800"><p class="text-3xl font-bold text-cyan-300">24/7</p><p class="text-slate-400 text-sm">Automated monitoring coverage</p></div>
+      <div class="bg-slate-900 rounded-xl p-5 border border-slate-800"><p class="text-3xl font-bold text-cyan-300">3x</p><p class="text-slate-400 text-sm">Faster decision turnaround</p></div>
     </div>
   </section>
 
   <section id="contact" class="max-w-6xl mx-auto px-6 py-16">
     <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8">
-      <h3 class="text-2xl font-bold">Let’s Build Your Demo</h3>
-      <p class="text-slate-400 mt-2">Share your use-case and we’ll prepare a tailored AI workflow demo.</p>
+      <h3 class="text-2xl font-bold">Let’s Build Your Workflow</h3>
+      <p class="text-slate-400 mt-2">Share your use-case. We’ll return a tailored automation blueprint.</p>
       <div class="mt-6 flex flex-wrap gap-3">
-        <a href="#" class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 px-5 py-3 rounded-lg font-semibold">Book a Call</a>
-        <a href="#" class="border border-slate-700 px-5 py-3 rounded-lg hover:bg-slate-800">Message on Telegram</a>
+        <a href="https://t.me/fmhunter1" target="_blank" class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 px-5 py-3 rounded-lg font-semibold">Message on Telegram</a>
+        <a href="https://github.com/mhnoyon8" target="_blank" class="border border-slate-700 px-5 py-3 rounded-lg hover:bg-slate-800">View GitHub</a>
       </div>
     </div>
   </section>
 
   <footer class="border-t border-slate-800">
-    <div class="max-w-6xl mx-auto px-6 py-6 text-sm text-slate-500">© 2026 Nexa Demo Studio · Built for fast AI workflow demos.</div>
+    <div class="max-w-6xl mx-auto px-6 py-6 text-sm text-slate-500">© 2026 AetherOps Studio · Built with OpenClaw workflows.</div>
   </footer>
 </body>
 </html>
