@@ -19,6 +19,7 @@
     .lift-card { transition: transform .25s ease, border-color .25s ease; }
     .lift-card:hover { transform: translateY(-6px); border-color: rgba(34,211,238,.5); }
     .count-pop { animation: pop .8s ease both; }
+    .hero-kpi { background: linear-gradient(180deg, rgba(15,23,42,.7), rgba(15,23,42,.45)); }
     @keyframes pop { 0%{transform:scale(.9);opacity:.2} 100%{transform:scale(1);opacity:1} }
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
@@ -30,7 +31,7 @@
 <body class="bg-slate-950 text-slate-100 selection:bg-cyan-300 selection:text-slate-900">
   <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-3 focus:left-3 focus:bg-cyan-400 focus:text-slate-950 focus:px-3 focus:py-2 focus:rounded-md focus:z-50">Skip to main content</a>
   <div class="fixed inset-0 -z-10 overflow-hidden">
-    <img src="./assets/lobster-bg.jpg" alt="background" class="w-full h-full object-cover scale-110 blur-2xl opacity-20" />
+    <img src="./assets/lobster-bg.jpg" alt="" aria-hidden="true" class="w-full h-full object-cover scale-110 blur-2xl opacity-20" />
     <div class="absolute inset-0 bg-slate-950/75"></div>
   </div>
   <header class="border-b border-slate-800 sticky top-0 bg-slate-950/90 backdrop-blur z-20" data-aos="fade-down">
@@ -59,6 +60,20 @@
       <span class="px-3 py-1 rounded-full bg-slate-900 border border-slate-800">⚡ Fast setup (days, not months)</span>
       <span class="px-3 py-1 rounded-full bg-slate-900 border border-slate-800">🔐 Guarded-by-default workflows</span>
       <span class="px-3 py-1 rounded-full bg-slate-900 border border-slate-800">📈 KPI-first weekly optimization</span>
+    </div>
+    <div class="mt-8 grid sm:grid-cols-3 gap-3" aria-label="14-day outcomes preview">
+      <div class="hero-kpi border border-slate-800 rounded-lg p-4">
+        <p class="text-cyan-300 text-xs font-semibold uppercase tracking-wide">Week 1</p>
+        <p class="text-sm mt-1 text-slate-200">Workflow audit + bottleneck map</p>
+      </div>
+      <div class="hero-kpi border border-slate-800 rounded-lg p-4">
+        <p class="text-cyan-300 text-xs font-semibold uppercase tracking-wide">Week 2</p>
+        <p class="text-sm mt-1 text-slate-200">First automation live with clear owner</p>
+      </div>
+      <div class="hero-kpi border border-slate-800 rounded-lg p-4">
+        <p class="text-cyan-300 text-xs font-semibold uppercase tracking-wide">By Day 14</p>
+        <p class="text-sm mt-1 text-slate-200">KPI baseline + weekly optimization loop</p>
+      </div>
     </div>
   </section>
 
@@ -117,6 +132,8 @@
       <div class="bg-slate-900 rounded-xl p-5 border border-slate-800 lift-card" data-aos="zoom-in" data-aos-delay="90"><p class="text-3xl font-bold text-cyan-300 count-pop">24/7</p><p class="text-slate-400 text-sm">Automated monitoring coverage</p></div>
       <div class="bg-slate-900 rounded-xl p-5 border border-slate-800 lift-card" data-aos="zoom-in" data-aos-delay="180"><p class="text-3xl font-bold text-cyan-300 count-pop">3x</p><p class="text-slate-400 text-sm">Faster decision turnaround</p></div>
     </div>
+    <p class="text-slate-400 text-sm mt-5">Want similar outcomes? Start with a 20-minute workflow teardown.</p>
+    <a href="#contact" class="inline-block mt-3 bg-cyan-500 hover:bg-cyan-400 text-slate-950 px-5 py-3 rounded-lg font-semibold glow-btn">Book a 20-min Call</a>
   </section>
 
   <section id="contact" class="max-w-6xl mx-auto px-6 py-16" data-aos="fade-up">
@@ -138,7 +155,8 @@
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    AOS.init({ duration: 700, once: true, easing: 'ease-out-cubic' });
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    AOS.init({ duration: reduceMotion ? 0 : 700, once: true, easing: 'ease-out-cubic', disable: reduceMotion });
   </script>
 </body>
 </html>
